@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs-Computes the absolute volue of an integer
- * @c:Input number as an integer
+ * @i:Input number as an integer
  * Return:Absolute value
  */
 int _abs(int i)
