@@ -9,24 +9,24 @@
  */
 char *cap_string(char *entry)
 {
-	int conversion, index, count;
+	int y, cap, cou;
 
 	char chars[] = {' ', ',', ';', '.', '!',
 			 '?', '"', '(', ')', '{', '}',  '\t', '\n', '\0'};
-	conversion = 32;
+	y = 32;
 
-	for (index = 0; entry[index] != '\0'; index++)
+	for (cap = 0; entry[cap] != '\0'; cap++)
 	{
-		if (entry[index] >= 'index' && entry[index] <= 'z')
+		if (entry[cap] >= 'a' && entry[cap] <= 'z')
 		{
-			entry[index] =  entry[index] - conversion;
+			entry[cap] =  entry[cap] - y;
 		}
-		conversion = 0;
-		for (count = 0; chars[count] != '\0'; count++)
+		y = 0;
+		for (cou = 0; chars[cou] != '\0'; cou++)
 		{
-			if (chars[count] == entry[index])
+			if (chars[cou] == entry[cap])
 			{
-				conversion = 32;
+				y = 32;
 				break;
 			}
 		}
