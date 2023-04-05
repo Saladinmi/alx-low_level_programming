@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sqrt_a - Main Entry
+ * sqrt0a - Main Entry
  * @a: input
  * @b: input
  * Return: 0
