@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * sqrt0a - Main Entry
+ * sqrt_a-Makes possible to evaluate from 1 to n
  * @a: input
  * @b: input
  * Return: 0
  */
-int sqrtOa(int a, int b)
+int sqrt_a(int a, int b)
 {
 	if (b * b == a)
 	{
@@ -13,7 +13,7 @@ int sqrtOa(int a, int b)
 	}
 	else if (b * b < a)
 	{
-		return (sqrtOa(a, b + 1));
+		return (sqrt_a(a, b + 1));
 	}
 	return (-1);
 }
@@ -25,6 +25,6 @@ int sqrtOa(int a, int b)
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrtOa(n, 0));
+	return (sqrt_a(n, 0));
 }
 
