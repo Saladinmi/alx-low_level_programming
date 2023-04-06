@@ -3,7 +3,8 @@
  * prime_x - Main Entry
  * @a: input
  * @b: input
- * Return: 0
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int prime_x(int a, int b)
 {
@@ -21,13 +22,14 @@ int prime_x(int a, int b)
 /**
  * is_prime_number - Main Entry
  * @n: input
- * Return: 0
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int is_prime_number(int n)
 {
 	if (n <= 1)
 	{
-		return 0;
+		return (0);
 	}
 	return (prime_x(n, 2));
 }
