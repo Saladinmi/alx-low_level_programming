@@ -7,7 +7,7 @@
  */
 int prime_x(int a, int b)
 {
-	if (a <= 1 && (a != b && a % b == 0))
+	if  (a != b && a % b == 0)
 	{
 		return (0);
 	}
@@ -25,6 +25,10 @@ int prime_x(int a, int b)
  */
 int is_prime_number(int n)
 {
+	if (n <= 1)
+	{
+		return 0;
+	}
 	return (prime_x(n, 2));
 }
 
