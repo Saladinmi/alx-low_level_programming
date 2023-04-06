@@ -7,7 +7,7 @@
  */
 int prime_x(int a, int b)
 {
-	if (a <= 1 || (a % b == 0))
+	if (a <= 1 && (a != b && a % b == 0))
 	{
 		return (0);
 	}
