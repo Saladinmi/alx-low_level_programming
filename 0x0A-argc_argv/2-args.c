@@ -6,9 +6,14 @@
  * @argv: Array name
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
-	(void)argv;
-	printf("%d\n", (argc - 1));
+	int x;
+
+	for (x = 0; x < argc; x++)
+	{
+		printf("%s\n", argv[x]);
+	}
 	return (0);
 }
