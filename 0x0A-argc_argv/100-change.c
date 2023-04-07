@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int cent, coin = 0;
-	
+
 	if (argc == 2)
 	{
 		cent = atoi(*(argv + 1));
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			}
 			else if (cent % 2 < cent)
 			{
-				cent -=2;
+				cent -= 2;
 				coin++;
 			}
 			else if (cent % 1 < cent)
