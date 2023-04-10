@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	for (x = 0; x < size; x++)
 	{
 		strx[x] = c;
-	}
 	strx[x] = 0;
 	return (size < 1 ? 0 : strx);
+	}
 }
